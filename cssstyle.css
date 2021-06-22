@@ -23,9 +23,6 @@ body a {
 body a:hover {
   color: #FFBC2E;
 }
-body .middle {
-  background-color: #F1F1F1;
-}
 body header {
   height: 130px;
 }
@@ -94,38 +91,11 @@ body header .menu a:nth-of-type(3)::before {
 body .fullbanner img {
   width: 100%;
 }
-body .carousel .slick-arrow {
-  width: 35px;
-  height: 25px;
-  font-size: 0;
-  border: none;
-  background-color: black;
-  border-radius: 5px;
-  position: absolute;
-  z-index: 10;
-  top: 115px;
-  right: -17px;
-}
-body .carousel .slick-arrow {
-  color: #FFBC2E;
-}
-body .carousel .slick-arrow::after {
-  content: "";
+body .corousel .slick-slider .slick-arrow {
+  width: 100px;
   display: block;
-  background: url("../img/sprite.png") no-repeat;
-  background-position: -109px -113px;
-  width: 18px;
-  height: 15px;
-  position: relative;
-  right: 3px;
 }
-body .carousel .slick-prev {
-  left: -17px;
-}
-body .carousel .slick-prev::after {
-  transform: rotate(180deg);
-}
-body .carousel h2 {
+body .corousel h2 {
   font-size: 30px;
 }
 body .information {
@@ -206,4 +176,4 @@ body .payments ul li.boleto {
   background-position: -146px -202px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=cssstyle.css.map */
