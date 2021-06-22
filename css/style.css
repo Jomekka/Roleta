@@ -1,0 +1,175 @@
+body {
+  box-sizing: border-box;
+  font-size: 12px !important;
+}
+body .container {
+  width: 1267px;
+  margin: 0 auto;
+  padding: 0;
+}
+body ul {
+  list-style: none;
+}
+body .button {
+  background-color: #FFBC2E;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body a:hover {
+  color: #FFBC2E;
+}
+body header {
+  height: 130px;
+}
+body header .logo {
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -7px -7px;
+  width: 182px;
+  height: 33px;
+  font-size: 0;
+  display: block;
+}
+body header form input {
+  color: #707070;
+  border: none;
+  background-color: #EDEDED;
+  width: 469px;
+  height: 45px;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+body header form button {
+  width: 120px;
+  height: 45px;
+}
+body header form button:hover {
+  color: #FFBC2E;
+  background: black;
+  transition: ease all 0.2s;
+}
+body header .menu a {
+  padding-left: 45px;
+}
+body header .menu a:nth-of-type(1)::before {
+  background: url("../img/sprite.png") no-repeat;
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: -5px;
+  top: 6px;
+  background-position: -10px -105px;
+  width: 20px;
+  height: 24px;
+}
+body header .menu a:nth-of-type(2)::before {
+  background: url("../img/sprite.png") no-repeat;
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: -5px;
+  top: 6px;
+  background-position: -75px -107px;
+  width: 25px;
+  height: 23px;
+}
+body header .menu a:nth-of-type(3)::before {
+  background: url("../img/sprite.png") no-repeat;
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: -5px;
+  top: 6px;
+  background-position: -39px -108px;
+  width: 25px;
+  height: 23px;
+}
+body .fullbanner img {
+  width: 100%;
+}
+body .corousel h2 {
+  font-size: 30px;
+}
+body .information {
+  background-color: black;
+  color: #FFFFFF;
+}
+body .information .container {
+  padding: 30px 0;
+}
+body .information .container h2 {
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -8px -55px;
+  width: 160px;
+  height: 28px;
+  font-size: 0;
+  align-items: center;
+}
+body .payments {
+  color: #FFBC2E;
+}
+body .payments h3 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+body .payments ul {
+  width: 100%;
+}
+body .payments ul li {
+  margin: 0 5px;
+}
+body .payments ul li.american {
+  background: url("../img/sprite.png") no-repeat;
+  width: 40px;
+  height: 25px;
+  background-position: -7px -169px;
+}
+body .payments ul li.aura {
+  background: url("../img/sprite.png") no-repeat;
+  width: 40px;
+  height: 25px;
+  background-position: -51px -169px;
+}
+body .payments ul li.dinners {
+  background: url("../img/sprite.png") no-repeat;
+  width: 40px;
+  height: 25px;
+  background-position: -97px -169px;
+}
+body .payments ul li.elo {
+  background: url("../img/sprite.png") no-repeat;
+  width: 40px;
+  height: 25px;
+  background-position: -144px -169px;
+}
+body .payments ul li.hiper {
+  background: url("../img/sprite.png") no-repeat;
+  width: 40px;
+  height: 25px;
+  background-position: -7px -202px;
+}
+body .payments ul li.master {
+  background: url("../img/sprite.png") no-repeat;
+  width: 40px;
+  height: 25px;
+  background-position: -52px -202px;
+}
+body .payments ul li.visa {
+  background: url("../img/sprite.png") no-repeat;
+  width: 40px;
+  height: 25px;
+  background-position: -97px -202px;
+}
+body .payments ul li.boleto {
+  background: url("../img/sprite.png") no-repeat;
+  width: 40px;
+  height: 25px;
+  background-position: -146px -202px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,167 @@
+$yellow : #FFBC2E;
+@mixin sprite{
+    background: url("../img/sprite.png") no-repeat;
+}
+@mixin elements{
+    @include sprite();
+    content: '';
+    display: inline-block;
+    position: relative;
+    left: -5px;
+    top: 6px;    
+}
+body{
+    box-sizing: border-box;
+    font-size: 12px !important;
+    .container{
+        width: 1267px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    .button{
+        background-color: $yellow;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            color: $yellow;
+        }
+    }
+    header{
+        height: 130px;
+        .logo{
+            @include sprite();
+            background-position: -7px -7px;
+            width: 182px;
+            height: 33px;
+            font-size: 0;
+            display: block;
+        }
+        form {
+            input{
+                color: #707070;
+                border: none;
+                background-color: #EDEDED;
+                width: 469px;
+                height: 45px;
+                border-radius: 5px;   
+                padding-left: 20px;                 
+            }
+            button{
+                width:120px;
+                height: 45px;
+               &:hover{
+                   color: $yellow;
+                   background: black;
+                   transition: ease all 0.2s;
+               }
+            }
+        }
+        .menu{
+            a{
+                padding-left: 45px;
+                &:nth-of-type(1)::before{
+                   @include elements();
+                   background-position: -10px -105px;
+                   width: 20px;
+                   height: 24px;     
+                }
+                &:nth-of-type(2)::before{
+                   @include elements();
+                   background-position: -75px -107px;
+                   width: 25px;
+                   height: 23px;     
+                }
+                &:nth-of-type(3)::before{
+                    @include elements();
+                    background-position: -39px -108px;
+                    width: 25px;
+                    height: 23px;     
+                 }
+
+            }
+        }
+
+    }
+    .fullbanner img{
+        width: 100%;
+    }
+    .corousel{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .information{
+        background-color: black;
+        color: #FFFFFF;
+        .container{
+            padding: 30px 0;
+            h2{
+                @include sprite();
+                background-position: -8px -55px;
+                width: 160px;
+                height: 28px;
+                font-size: 0;
+                align-items: center;
+            }
+        }
+    }
+    @mixin payments-sprite {
+        @include sprite();
+            width: 40px;
+            height: 25px;
+    }
+    .payments{
+        color: $yellow;
+        h3{
+            font-size: 15px;
+            text-align: center;
+            font-weight: 700;
+        }
+        ul{
+            width: 100%;
+            li{
+                margin: 0 5px
+            }
+            li.american{
+                @include payments-sprite();
+                background-position: -7px -169px;
+            }
+            li.aura{
+                @include payments-sprite();
+                background-position: -51px -169px;
+            }
+            li.dinners{
+                @include payments-sprite();
+                background-position: -97px -169px;
+            }
+            li.elo{
+                @include payments-sprite();
+                background-position: -144px -169px;
+            }
+            li.hiper{
+                @include payments-sprite();
+                background-position: -7px -202px;
+            }
+            li.master{
+                @include payments-sprite();
+                background-position: -52px -202px;
+            }
+            li.visa{
+                @include payments-sprite();
+                background-position: -97px -202px;
+            }
+            li.boleto{
+                @include payments-sprite();
+                background-position: -146px -202px;
+        }    }
+    }      
+
+}
